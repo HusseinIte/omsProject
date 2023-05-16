@@ -14,19 +14,19 @@ class UserTypeSeeder extends Seeder
     public function run(): void
     {
         UserType::create([
-            'type' => 'admin',
+            'type' => 'أدمن',
         ]);
         UserType::create([
-            'type' => 'warehouse',
+            'type' => 'مستودع',
         ]);
         UserType::create([
-            'type' => 'delivery',
+            'type' => 'توصيل',
         ]);
         UserType::create([
-            'type' => 'maintenance',
+            'type' => 'صيانة',
         ]);
         UserType::create([
-            'type' => 'customer',
+            'type' => 'زبون',
         ]);
     }
 }

@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\Category\Category;
+use App\Models\Category\CategoryAttribute;
 use App\Models\User\User;
 
 
@@ -19,6 +21,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserTypeSeeder::class,
             UserSeeder::class,
+            CategorySeeder::class,
+            CategoryAttributeSeeder::class,
+            CategoryAttributeValueSeeder::class
 
         ]);
     }

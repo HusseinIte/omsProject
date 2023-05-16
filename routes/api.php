@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\User\AuthController;
+use App\Services\Users\ManageEmployee;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -22,3 +23,6 @@ Route::controller(AuthController::class)->group(function () {
 
 
 });
+Route::post('/image',[\App\Http\Controllers\Image\ImageController::class,'uploadMultipleImage']);
+Route::post('/test',[\App\Http\Controllers\Product\ProductController::class,'testProduct']);
+
